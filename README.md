@@ -22,5 +22,5 @@ cd ./network/scripts/
 First change the path to your certificates inside the connection-profile to your newly generated ones inside the organizations folder.
 ```
 cd ../explorer
-./createChannel.sh
+docker-compose up -d
 ```
