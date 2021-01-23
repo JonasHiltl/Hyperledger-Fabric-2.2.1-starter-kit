@@ -13,3 +13,14 @@ To start the Network with CouchDB use the ./networkUpWithCouchDB.sh script. To s
 cd ./network/scripts/
 ./networkUpWithCouchDB.sh
 ```
+# 3. Create Channel for Org1 and Org2
+```
+cd ./network/scripts/
+./createChannel.sh
+```
+# 4. Start the Fabric Explorer to see insights about the network
+First change the path to your certificates inside the connection-profile to your newly generated ones inside the organizations folder.
+```
+cd ../explorer
+./createChannel.sh
+```
