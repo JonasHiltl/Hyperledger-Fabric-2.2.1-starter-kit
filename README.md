@@ -24,3 +24,10 @@ First change the path to your certificates inside the connection-profile to your
 cd ../explorer
 docker-compose up -d
 ```
+# 5. Stop the Network and Fabrioc Explorer
+```
+cd ../scripts
+./networkdown.sh
+cd ../explorer
+docker-compose down
+```
