@@ -9,6 +9,4 @@ docker-compose -f ./docker-compose-couch.yaml down
 docker stop couchdb1
 docker stop couchdb0
 
-docker volume prune -f
-
 popd
