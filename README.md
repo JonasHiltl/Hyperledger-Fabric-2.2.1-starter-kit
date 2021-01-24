@@ -19,13 +19,21 @@ cd ./network/scripts/
 cd ./network/scripts/
 ./createChannel.sh
 ```
-# 4. Start the Fabric Explorer to see insights about the network
+# 4 generate Connection Profile
+The ccp-generate script is located inside of the network/organizations folder. The Connection Profile is required for the Application to connect to the network.
+```
+cd ..
+./organizations/ccp-generate.sh
+```
+You can now find the generated Connection Profiles inside of the Peer Organizations.
+
+# 5. Start the Fabric Explorer to see insights about the network
 First change the path to your certificates inside the connection-profile to your newly generated ones inside the organizations folder.
 ```
 cd ../explorer
 docker-compose up -d
 ```
-# 5. Stop the Network and Fabrioc Explorer
+# 6. Stop the Network and Fabrioc Explorer
 ```
 cd ../scripts
 ./networkdown.sh

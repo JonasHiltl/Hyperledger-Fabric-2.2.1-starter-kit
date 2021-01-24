@@ -1,5 +1,6 @@
 #!/bin/bash
 
+pushd ~/mount/network
 function one_line_pem {
     echo "`awk 'NF {sub(/\\n/, ""); printf "%s\\\\\\\n",$0;}' $1`"
 }
@@ -43,3 +44,4 @@ CAPEM=organizations/peerOrganizations/org2.example.com/ca/ca.org2.example.com-ce
 
 echo "$(json_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM)" > organizations/peerOrganizations/org2.example.com/connection-org2.json
 echo "$(yaml_ccp $ORG $P0PORT $CAPORT $PEERPEM $CAPEM)" > organizations/peerOrganizations/org2.example.com/connection-org2.yaml
+popd
