@@ -44,6 +44,4 @@ docker-compose up -d
 ```
 cd ../scripts
 ./networkdown.sh
-cd ../explorer
-docker-compose down
 ```
