@@ -17,7 +17,7 @@ cd ./network/scripts/
 ./generateCryptoWithCa.sh
 ```
 ## 2. Start the network with CouchDB/levelDB
-To start the Network with CouchDB use the ./networkUpWithCouchDB.sh script. To start iwth levelDB use networkup.sh.
+To start the Network with CouchDB use the ./networkUpWithCouchDB.sh script. To start with levelDB use networkup.sh.
 ```
 ./networkUpWithCouchDB.sh
 docker ps
