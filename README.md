@@ -20,6 +20,7 @@ cd ./network/scripts/
 To start the Network with CouchDB use the ./networkUpWithCouchDB.sh script. To start iwth levelDB use networkup.sh.
 ```
 ./networkUpWithCouchDB.sh
+docker ps
 ```
 # 3. Create Channel for Org1 and Org2
 ```
