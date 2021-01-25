@@ -1,7 +1,15 @@
 # Hyperledger Fabric-2.2.1 starter kit
 This is a starter kit for Hyperledger Fabric with Fabric Explorer support. Use scripts to generate crypto material/deploy chaincode etc.
 
-I have used this kit inside the mount folder of a virtual box with vagrant. You would still have to download the fabric binaries to copy them to your local bin.
+First download the binaries and fabric samples:
+```
+curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.3.0 1.4.9
+cd fabric-samples/
+sudo cp ./bin/* /usr/local/bin
+peer version
+cd ..
+git clone https://github.com/JonasHiltl/Hyperledger-Fabric-2.2.1-starter-kit.git
+```
 # 1. Generate Crypto material with CA
 Use the generateCryptoWithCa.sh script inside of the /network/scripts folder
 ```
