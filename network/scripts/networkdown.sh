@@ -10,3 +10,9 @@ docker stop couchdb1
 docker stop couchdb0
 
 popd
+
+pushd ~/mount/network/explorer
+
+docker-compose down
+
+popd
