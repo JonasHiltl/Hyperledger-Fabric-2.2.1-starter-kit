@@ -19,12 +19,10 @@ cd ./network/scripts/
 # 2. Start the network with CouchDB/levelDB
 To start the Network with CouchDB use the ./networkUpWithCouchDB.sh script. To start iwth levelDB use networkup.sh.
 ```
-cd ./network/scripts/
 ./networkUpWithCouchDB.sh
 ```
 # 3. Create Channel for Org1 and Org2
 ```
-cd ./network/scripts/
 ./createChannel.sh
 ```
 # 4. Generate Connection Profile
