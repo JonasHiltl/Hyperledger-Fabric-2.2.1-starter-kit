@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	ExampleChaincode, err := contractapi.NewChaincode(&chaincode.SmartContract{})
+	ExampleChaincode, err := contractapi.NewChaincode(&contract.SmartContract{})
 	if err != nil {
 		log.Panicf("Error: %v", err)
 	}
